@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(to left, #00b09b, #96c93d);
+      }
+      table,
+      th,
+      td {
+        border: 2px black solid;
+      }
+      table {
+        width: 30vw;
+        background-color: ;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      .message {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: green;
+        font-size: 2rem;
+      }
+      .table-container {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message"><p>Form Submitted successfully - Don't Find Bugs just started developing</p></div>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Firstname</th>
+          <td>#[attributes.queryParams.name]</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td>#[attributes.queryParams.email]</td>
+        </tr>
+        <tr>
+          <th>PhoneNo</th>
+          <td>#[attributes.queryParams.phone]</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
